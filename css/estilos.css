@@ -1,0 +1,364 @@
+
+/*Selectores: 
+Descendente: "poner cada elemento anidado" body header div nav ol li a
+Selector de clase: .link{}
+Selector de Id #portafolio{}
+*/
+
+body{
+
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    
+}
+
+h1{
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+}   
+
+h1 strong{
+    color: #026fff;
+}
+
+h2{
+    color: #026fff; 
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+    margin: 0;
+  }
+
+
+.header{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    height: 90px;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.menu{
+    height: inherit;
+    flex-wrap:inherit;
+}
+
+
+.header ol{
+    display: flex; 
+    height: inherit ;
+ }
+
+ .header ol li { /* .header ol li hereda de .header ol */
+    height: inherit;
+  }
+.header a{
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo{
+    margin-top: 15px;
+    margin-left: 0px;
+    flex-wrap:inherit;
+}
+
+.banner{
+    height: 300px;
+    /* background-image: url('../danny/portada.jpg'); */
+    background-color: #1b2127;
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x:right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner-image{
+    object-fit: cover;
+}
+
+.portfolio{
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.project{
+     /* border-top: 10px solid red;  
+    border-right: 10px solid red;
+/*     https://www.sexmixxx.com/videos/126/julia-ann-phoenix-marie-richelle-ryan/ */
+    border-bottom: 10px solid red;
+    border-left: 10px solid red;
+    /* border-color: red;
+    border-width: 10px;
+    border-style: solid; */
+    border: 1px solid gray;
+    border-radius: 10px;
+   /*  margin:10px; */
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif
+}
+.project-details{
+    width: 500px;
+}
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-description, .project-date, .project-url{
+    margin: 10px 0 ;
+}
+
+.project-imageContainer{
+    width: 500px;
+    padding-right: 40px;
+}
+.project-image{
+    width: 500px;
+}
+
+
+
+
+
+.experience-title{
+    margin-left: 0px;
+}
+.experience-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+.experience-card{
+    border: 1px solid black;
+    margin: 15px;
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #f4fbff;
+}
+.experience-card img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+   
+}
+
+.experience-detail{
+    margin:20px;
+    background-color:white;
+    margin-top:-60px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.experience-detail p{
+    text-align: left;
+}
+
+.experience-detail a{
+    border: 1px solid #026fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #026fff; 
+    border-radius: 5px;
+}
+
+
+.hobbies{
+    background-color: #fafafa;
+}
+
+.hobbies-title{
+    margin-left: 0px;
+}
+.hobbies-list{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.hobbies-box{
+   border: 1px solid black;
+    margin: 15px;
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color:  white;
+}
+
+.hobbies-box img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hobbie-detail{
+    margin:20px;
+    height: 150px;
+    background-color: #f4fbff;
+    text-align: center;
+    margin-top:10px;
+    padding: 20px;
+
+}
+
+.hobbie-detail a{
+    border: 1px solid #026fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #026fff; 
+    border-radius: 5px;
+}
+
+.contact{
+    background-color: #026fff;
+    color:white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.form-email input{
+
+    border-color: gr    ay;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../danny/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: center;
+}
+
+.form-email button{
+    color:white;
+    border: 1px solid white;
+    display: block;
+    background:transparent;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter{
+    background-image: url('../danny/twitter.svg');
+    
+}
+.social-link.facebook{
+    background-image: url('../danny/facebook.svg');
+}
+.social-link.instagram{
+    background-image: url('../danny/instagram.svg');
+}
+.social-link.github{
+    background-image: url('../danny/github.svg');
+}
+.footer{
+    color: white;
+    background-color:  #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.footer a{
+    text-decoration:none;
+    color: white;
+}
+
+
+.container{
+
+max-width: 1000px;
+margin: 0 auto;
+display: inherit;
+flex:1;
+align-items: inherit;
+justify-content: inherit;
+height: inherit;
+flex-wrap: inherit;
+
+}
+
+
+/* Desktop First --- Empezar por las MQ más grandes */
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+@media screen and (max-width: 320px){
+
+}
