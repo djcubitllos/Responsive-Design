@@ -351,12 +351,18 @@ flex-wrap: inherit;
 
 }
 
-@media screen and (max-width: 768px){
-
+@media screen and (max-width: 767px){
+    .header{
+        color:red:
+    }
+   
 }
 
-@media screen and (max-width: 480px){
-
+@media screen and (max-width: 479px){
+.header{
+       color: blue;
+    }
+   
 }
 
 @media screen and (max-width: 320px){
