@@ -51,6 +51,75 @@ figure {
   }
 
 
+
+
+.banner{
+    height: 300px;
+    /* background-image: url('../danny/portada.jpg'); */
+    background-color: #1b2127;
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x:right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner-image{
+    object-fit: cover;
+}
+
+.portfolio{
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.project{
+     /* border-top: 10px solid red;  
+    border-right: 10px solid red;
+/*     https://www.sexmixxx.com/videos/126/julia-ann-phoenix-marie-richelle-ryan/ */
+    border-bottom: 10px solid red;
+    border-left: 10px solid red;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif
+}
+.project-details{
+    width: 50%;
+}
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-description{
+    margin: 10px 0 ;
+    font-size: 20px ;
+} .project-date{
+    margin: 10px 0 ;
+    font-size: 15px ;
+} .project-url{
+    margin: 10px 0 ;
+    font-size: 15px ;
+}
+
+.project-imageContainer{
+    width: 50%;
+}
+.project-image{
+    max-width: 100%;
+}
+
 .header{
     background-color: #1b2127;
     color: white;
@@ -85,77 +154,10 @@ figure {
 }
 
 .logo{
-    margin-top: 15px;
+    margin-top: 0   px;
     margin-left: 0px;
     flex-wrap:inherit;
 }
-
-.banner{
-    height: 300px;
-    /* background-image: url('../danny/portada.jpg'); */
-    background-color: #1b2127;
-    /* background-size: 500px 300px; */
-    /* background-repeat: no-repeat; */
-    /* background-position-x:right; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.banner-image{
-    object-fit: cover;
-}
-
-.portfolio{
-    background-color: #fafafa;
-    padding: 20px;
-}
-
-.project{
-     /* border-top: 10px solid red;  
-    border-right: 10px solid red;
-/*     https://www.sexmixxx.com/videos/126/julia-ann-phoenix-marie-richelle-ryan/ */
-    border-bottom: 10px solid red;
-    border-left: 10px solid red;
-    /* border-color: red;
-    border-width: 10px;
-    border-style: solid; */
-    border: 1px solid gray;
-    border-radius: 10px;
-   /*  margin:10px; */
-    margin-bottom: 15px;
-    padding: 20px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.project strong{
-    font-family: 'Fjalla One', sans-serif
-}
-.project-details{
-    width: 500px;
-}
-.project-title{
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-.project-description, .project-date, .project-url{
-    margin: 10px 0 ;
-}
-
-.project-imageContainer{
-    width: 500px;
-    padding-right: 40px;
-}
-.project-image{
-    width: 500px;
-}
-
-
 
 
 
@@ -333,7 +335,7 @@ figure {
 
 .container{
 
-max-width: 1000px;
+max-width: 1500px;
 margin: 0 auto;
 display: inherit;
 flex:1;
@@ -345,27 +347,68 @@ flex-wrap: inherit;
 }
 
 
-/* Desktop First --- Empezar por las MQ más grandes */
-
 @media screen and (max-width: 1024px){
-
+    
 }
 
+
 @media screen and (max-width: 767px){
-    .header {
-        display:block;
+    .header{
+        display: block;
         height: auto;
+   }
+    .header ol{
+        display: block;
+    }
+    .header ol li{
+        height:40px;
+    }
+    .header a{
+        justify-content: center;
+    }
+    .logo{
+        text-align: center;
+    } 
+    .project{
+        display: block;
+    }
+    .project-details{
+        width: auto;
+        text-align: center;
+        font-size: 20px;
+    }
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project-title{
+        margin-top: 0.1em;
+        font-size: 1.5em;
+    }
+    .project-description{
+        font-size: 1em;
+    }
+    .project-date{
+        font-size: 0.8em;
+    }
+    .project-url{
+        font-size: 0.8em;
+    }
+
+    .project-title, .project-description, .project-date,.project-url{
+        margin: 0.4em 0;
     }
 }
 
 @media screen and (max-width: 480px){
-    .header a{
-        color: blue;
+    .project-details{
+        font-size: 18px;
     }
 }
 
 @media screen and (max-width: 320px){
-    .header a{
-        color: yellow;
+    .project-details{
+        font-size: 15px;
     }
 }
+
