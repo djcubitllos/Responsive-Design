@@ -314,6 +314,10 @@ figure {
 .social-link.github{
     background-image: url('../danny/github.svg');
 }
+#contacto{
+    padding: 0.5em;
+}
+
 .footer{
     color: white;
     background-color:  #1b2127;
@@ -324,13 +328,15 @@ figure {
 }
 
 .footer img{
-    vertical-align: middle;
+    padding: 10px;
+    margin-left: -570px;
 }
 
 .footer a{
     text-decoration:none;
     color: white;
 }
+
 
 
 .container{
@@ -344,15 +350,25 @@ justify-content: inherit;
 height: inherit;
 flex-wrap: inherit;
 
+
 }
 
 
 @media screen and (max-width: 1024px){
-    
+    .container{ 
+        padding: 0 1em;
+    }
+    .footer img {
+        padding: 10px;
+        margin-left: -320px;
+    }
 }
 
 
 @media screen and (max-width: 767px){
+    .container{ 
+        padding: 0 1em;
+    }
     .experience-title , .portfolio-hdos,.hobbies-title{
         text-align: center;
     }
@@ -407,6 +423,10 @@ flex-wrap: inherit;
         height: 190px;
         object-fit: cover;
     }
+    .footer img {
+        padding: 10px;
+        margin-left: -190px;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -421,12 +441,34 @@ flex-wrap: inherit;
         width: auto;
         flex-shrink: initial;
     }
+    .contact{
+        height: auto;
+        display: block;
+        text-align: center;
+        padding: 1em 0;
+    }
+    .form-email h3{
+        margin-top: 0;
+    }
+    button{
+        margin: 1em  auto;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        padding: 0.5em;
+    }
+    .footer img {
+        margin:auto;
+    }
 }
 
 @media screen and (max-width: 320px){
     .project-details{
         font-size: 15px;
     }
-    
+    .container{ 
+        padding: 0;
+    }
 }
 
