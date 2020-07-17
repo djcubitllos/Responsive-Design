@@ -355,6 +355,25 @@ flex-wrap: inherit;
 
 
 @media screen and (max-width: 1024px){
+    .banner{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    .banner-image{
+        position: absolute;
+        z-index: 1;
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    h1{
+        font-size: 2em;
+        z-index: 2;
+    }
     .container{ 
         padding: 0 1em;
     }
@@ -366,6 +385,7 @@ flex-wrap: inherit;
 
 
 @media screen and (max-width: 767px){
+    
     .container{ 
         padding: 0 1em;
     }
@@ -430,6 +450,9 @@ flex-wrap: inherit;
 }
 
 @media screen and (max-width: 480px){
+    .banner{
+        padding: 1.5em;
+    }
     .project-details{
         font-size: 18px;
     }
@@ -464,6 +487,9 @@ flex-wrap: inherit;
 }
 
 @media screen and (max-width: 320px){
+    h1{
+        font-size: 1.5em;
+    }
     .project-details{
         font-size: 15px;
     }
