@@ -223,8 +223,8 @@ figure {
 
 .hobbies-box{
    border: 1px solid black;
-    margin: 15px;
-    width: 500px;
+    margin: 2%;
+    width: 45%;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
@@ -232,8 +232,8 @@ figure {
 }
 
 .hobbies-box img{
-    width: 500px;
-    height: 400px;
+    width: 100%;
+    /* height: 400px; */
     object-fit: cover;
 }
 
@@ -353,7 +353,7 @@ flex-wrap: inherit;
 
 
 @media screen and (max-width: 767px){
-    .experience-title , .portfolio-hdos{
+    .experience-title , .portfolio-hdos,.hobbies-title{
         text-align: center;
     }
     .header{
@@ -401,6 +401,12 @@ flex-wrap: inherit;
     .project-title, .project-description, .project-date,.project-url{
         margin: 0.4em 0;
     }
+
+    .hobbies-box img{
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -408,6 +414,10 @@ flex-wrap: inherit;
         font-size: 18px;
     }
     .experience-card{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .hobbies-box{
         width: auto;
         flex-shrink: initial;
     }
