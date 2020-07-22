@@ -5,6 +5,140 @@ Selector de clase: .link{}
 Selector de Id #portafolio{}
 */
 
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?iufl96');
+    src:  url('../fonts/icomoon.eot?iufl96#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?iufl96') format('truetype'),
+      url('../fonts/icomoon.woff?iufl96') format('woff'),
+      url('../fonts/icomoon.svg?iufl96#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-linkedin:before {
+    content: "\e900";
+  }
+  .icon-brand:before {
+    content: "\e900";
+  }
+  .icon-social:before {
+    content: "\e900";
+  }
+  .icon-linkedin1:before {
+    content: "\e901";
+  }
+  .icon-brand1:before {
+    content: "\e901";
+  }
+  .icon-social1:before {
+    content: "\e901";
+  }
+  .icon-github:before {
+    content: "\e902";
+  }
+  .icon-brand2:before {
+    content: "\e902";
+  }
+  .icon-octacat:before {
+    content: "\e902";
+  }
+  .icon-social2:before {
+    content: "\e902";
+  }
+  .icon-behance:before {
+    content: "\e903";
+  }
+  .icon-brand3:before {
+    content: "\e903";
+  }
+  .icon-social3:before {
+    content: "\e903";
+  }
+  .icon-twitter:before {
+    content: "\e904";
+    
+  }
+  .icon-brand4:before {
+    content: "\e904";
+  }
+  .icon-tweet:before {
+    content: "\e904";
+  }
+  .icon-social4:before {
+    content: "\e904";
+  }
+  .icon-whatsapp:before {
+    content: "\e905";
+  }
+  .icon-brand5:before {
+    content: "\e905";
+  }
+  .icon-social5:before {
+    content: "\e905";
+  }
+  .icon-instagram:before {
+    content: "\e906";
+  }
+  .icon-brand6:before {
+    content: "\e906";
+  }
+  .icon-social6:before {
+    content: "\e906";
+  }
+  .icon-facebook:before {
+    content: "\e907";
+  }
+  .icon-brand7:before {
+    content: "\e907";
+  }
+  .icon-social7:before {
+    content: "\e907";
+  }
+  .icon-sphere:before {
+    content: "\e908";
+  }
+  .icon-globe:before {
+    content: "\e908";
+  }
+  .icon-internet:before {
+    content: "\e908";
+  }
+  .icon-menu:before {
+    content: "\e909";
+  }
+  .icon-list:before {
+    content: "\e909";
+  }
+  .icon-options:before {
+    content: "\e909";
+  }
+  .icon-lines:before {
+    content: "\e909";
+  }
+  .icon-hamburger:before {
+    content: "\e909";
+  }
+
+
+
+
 body{
 
     font-family: 'Source Sans Pro', sans-serif;
@@ -294,17 +428,23 @@ figure {
 
 
 .social-link{
-    display: inline-block;
+    display: inline-flex;
     width: 50px;
     height: 50px;
     margin: 0 10px;
     background-size: 50px 50px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-link.twitter{
     background-image: url('../danny/twitter.svg');
     
 }
+
 .social-link.facebook{
     background-image: url('../danny/facebook.svg');
 }
@@ -337,8 +477,6 @@ figure {
     color: white;
 }
 
-
-
 .container{
 
 max-width: 1500px;
@@ -349,10 +487,44 @@ align-items: inherit;
 justify-content: inherit;
 height: inherit;
 flex-wrap: inherit;
-
-
 }
 
+.html-video{
+    width: 100%;
+    height: auto;
+}
+
+.youtube-video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+}
+
+.flex-box-video{
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgba(27, 33, 39, .8);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 5;
+    left:5px;
+    top:5px;
+    color:white;
+}
 
 @media screen and (max-width: 1024px){
     .banner{
@@ -385,7 +557,9 @@ flex-wrap: inherit;
 
 
 @media screen and (max-width: 767px){
-    
+    .burger-button{
+        display: block;
+    }
     .container{ 
         padding: 0 1em;
     }
@@ -400,10 +574,30 @@ flex-wrap: inherit;
         display: block;
     }
     .header ol li{
-        height:40px;
+        height:80px;
     }
     .header a{
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: 0.5em;
+    }
+    .menu{
+        position: fixed;
+        z-index: 4;
+        width: 100vw;
+        top:0;
+        left: -100vw;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(5, 111, 255, 0.8);
+        transition: 0.3s;
+    }
+    .menu.is-active{
+        left:0;
     }
     .logo{
         text-align: center;

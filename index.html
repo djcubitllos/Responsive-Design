@@ -7,17 +7,19 @@
         <link rel="icon" type="image/png" href="danny/iconlogo.png">
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/estilos.css">
+        
     </head>
 
     <body>
+        <i class="icon-menu burger-button" id="burger-menu"></i>
         <header class="header">
             <div class="container">
                 <figure class="logo">
                     <img src="danny/logopq.png" alt="Imagen no encontrada">
                 </figure>
-                <nav class="menu">
+                <nav class="menu .is-active">
                     <ol>
-                        <li><a class="link" href="#portafolio">Portafolio</a></li>
+                        <li><a class="link" href="#port-an">Portafolio</a></li>
                         <li><a class="link" href="#experiencia">Experiencia</a></li>
                         <li><a class="link" href="#hobbies">Gustos personales</a></li>
                         <li><a class="link" href="#contacto">Contacto</a></li>
@@ -35,7 +37,7 @@
         </section> 
     <!--   SECCION DE PROYECTOS------------------------------------------ -->
         <section class="portfolio">
-            <div class="container">
+            <div class="container" id="port-an">
 
                 <h2 class="portfolio-hdos">Portafolio (Proyectos destacados)</h2>
                 
@@ -113,16 +115,22 @@
                 </article>
             </div>
         </section>
+        <video class="html-video" src="danny/whs.mp4" width="1280" height="720" controls>
+        </video>
     <!--   SECCION DE HOBBIES------------------------------------------ -->
-        <div class="container"> 
+        <div class="container" id="hobbies"> 
         <h2 class="hobbies-title">Mis gustos personales</h2>
         </div>
-        <section id="hobbies" class="hobbies">
+      
+        <section  class="hobbies">
             <div class="container">
                 <div class="hobbies-list">
                     <article class="hobbies-box">
                         <figure>
-                            <img src="danny/gs.jpg" alt="Imagen Musica"/>
+                            <div class="flex-box-video">
+                                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/KfYgupRoSJY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <!-- <img src="danny/gs.jpg" alt="Imagen Musica"/> -->
                         </figure>
                         <div class="hobbie-detail">
                             <h3>Música</h3>
@@ -174,10 +182,10 @@
                     <button>Enviar</button>
                 </form>
                 <div class="social">
-                    <a href="https://www.twitter.com" class="social-link twitter"></a>
-                    <a href="https://www.facebook.com/danny.cubillos.75" class="social-link facebook"></a>
-                    <a href="https://www.instagram.com/cubillosdanny" class="social-link instagram"></a>
-                    <a href="https://github.com/djcubitllos" class="social-link github"></a>
+                    <a href="https://www.twitter.com" class="social-link icon-twitter"></a>
+                    <a href="https://www.facebook.com/danny.cubillos.75" class="social-link icon-facebook"></a>
+                    <a href="https://www.instagram.com/cubillosdanny" class="social-link icon-instagram"></a>
+                    <a href="https://github.com/djcubitllos" class="social-link icon-github"></a>
                 </div>
             </div>
         </section>
@@ -191,7 +199,7 @@
                 <div><p>Mas información: <a href="https://www.linkedin.com/in/danny-cubillos-vel%C3%A1squez-7b4479125/"> 👨🏽‍💼@Danny Cubillos</a> </p></div>
             </div>
         </footer> 
-        
+        <script src="js/interactivity.js"></script>
     </body>
 
 </html>
