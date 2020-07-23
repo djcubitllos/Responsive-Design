@@ -296,7 +296,8 @@ figure {
 
 
 .experience-title{
-    margin-left: 0px;
+    margin-left: 1em;
+
 }
 .experience-list{
     display: flex;
@@ -347,7 +348,8 @@ figure {
 }
 
 .hobbies-title{
-    margin-left: 0px;
+    margin-left: 1em;
+
 }
 .hobbies-list{
     display: flex;
@@ -526,7 +528,13 @@ flex-wrap: inherit;
     color:white;
 }
 
-@media screen and (max-width: 1024px){
+
+
+/*Seccion de media queries*/
+
+
+@media screen and (max-width: 1023px){
+    
     .banner{
         height: auto;
         position: relative;
@@ -563,7 +571,7 @@ flex-wrap: inherit;
     .container{ 
         padding: 0 1em;
     }
-    .experience-title , .portfolio-hdos,.hobbies-title{
+    .portfolio-hdos, .experience-title , .portfolio-hdos,.hobbies-title{
         text-align: center;
     }
     .header{
